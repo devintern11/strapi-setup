@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "horizontalcategory_cards",
+  "info": {
+    "singularName": "horizontalcategory-card",
+    "pluralName": "horizontalcategory-cards",
+    "displayName": "horizontalcategory_card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "ids": {
+      "type": "integer"
+    },
+    "home_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::home-page.home-page",
+      "inversedBy": "horizontalcategory_cards"
+    }
+  }
+}

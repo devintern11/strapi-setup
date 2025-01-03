@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infinite_scroll_logos",
+  "info": {
+    "singularName": "infinite-scroll-logo",
+    "pluralName": "infinite-scroll-logos",
+    "displayName": "InfiniteScrollLogo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "src": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "home_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::home-page.home-page",
+      "inversedBy": "infinite_scroll_logos"
+    }
+  }
+}

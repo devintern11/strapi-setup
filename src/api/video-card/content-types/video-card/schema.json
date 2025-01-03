@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_cards",
+  "info": {
+    "singularName": "video-card",
+    "pluralName": "video-cards",
+    "displayName": "video-card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videourl": {
+      "type": "string"
+    },
+    "thumbnailUrl": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "home_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::home-page.home-page",
+      "inversedBy": "video_cards"
+    }
+  }
+}

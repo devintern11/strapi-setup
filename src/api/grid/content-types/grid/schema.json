@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grids",
+  "info": {
+    "singularName": "grid",
+    "pluralName": "grids",
+    "displayName": "grid",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "src": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "className": {
+      "type": "string"
+    },
+    "home_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::home-page.home-page",
+      "inversedBy": "grids"
+    }
+  }
+}

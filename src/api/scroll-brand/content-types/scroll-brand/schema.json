@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scroll_brands",
+  "info": {
+    "singularName": "scroll-brand",
+    "pluralName": "scroll-brands",
+    "displayName": "scroll_brand"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand_src": {
+      "type": "string"
+    },
+    "brand_alt": {
+      "type": "string"
+    }
+  }
+}

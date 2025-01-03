@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home-page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_background_video_src": {
+      "type": "string"
+    },
+    "hero_heading": {
+      "type": "string"
+    },
+    "hero_sub_heading": {
+      "type": "string"
+    },
+    "ourleagacy_heading": {
+      "type": "string"
+    },
+    "ourleagacy_subheading": {
+      "type": "string"
+    },
+    "ourleagacy_videourl": {
+      "type": "string"
+    },
+    "ourleagacy_additionalText": {
+      "type": "string"
+    },
+    "horizontalcategory_heading": {
+      "type": "string"
+    },
+    "horizontalcategory_subheading": {
+      "type": "string"
+    },
+    "horizontalcategory_buttonText": {
+      "type": "string"
+    },
+    "horizontalcategory_buttonLink": {
+      "type": "string"
+    },
+    "InsideParallax_backgroundImage": {
+      "type": "string"
+    },
+    "InsideParallax_heading": {
+      "type": "string"
+    },
+    "YtCardsScroll_title": {
+      "type": "string"
+    },
+    "YtCardsScroll_description": {
+      "type": "string"
+    },
+    "testmonial_heading": {
+      "type": "string"
+    },
+    "horizontalcategory_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::horizontalcategory-card.horizontalcategory-card",
+      "mappedBy": "home_page"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial",
+      "mappedBy": "home_page"
+    },
+    "featureproducts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::featureproduct.featureproduct",
+      "mappedBy": "home_page"
+    },
+    "infinite_scroll_logos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::infinite-scroll-logo.infinite-scroll-logo",
+      "mappedBy": "home_page"
+    },
+    "grids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::grid.grid",
+      "mappedBy": "home_page"
+    },
+    "statistics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::statistic.statistic",
+      "mappedBy": "home_page"
+    },
+    "video_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video-card.video-card",
+      "mappedBy": "home_page"
+    }
+  }
+}
