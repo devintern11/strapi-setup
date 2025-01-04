@@ -634,16 +634,20 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
+    product_detail_image: Schema.Attribute.String;
     product_images: Schema.Attribute.Relation<
       'manyToMany',
       'api::product-image.product-image'
     >;
+    productadvantage: Schema.Attribute.Text;
     productdescrption: Schema.Attribute.String;
     productfeature: Schema.Attribute.Blocks;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    videosection_src: Schema.Attribute.String;
+    videosection_title: Schema.Attribute.String;
   };
 }
 

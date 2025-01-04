@@ -35,6 +35,15 @@
     },
     "productadvantage": {
       "type": "text"
+    },
+    "product_detail_image": {
+      "type": "string"
+    },
+    "videosection_title": {
+      "type": "string"
+    },
+    "videosection_src": {
+      "type": "string"
     }
   }
 }

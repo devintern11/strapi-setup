@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featureproducts",
+  "info": {
+    "singularName": "featureproduct",
+    "pluralName": "featureproducts",
+    "displayName": "Featureproduct",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "featureproduct_id": {
+      "type": "integer"
+    },
+    "featureproduct_quote": {
+      "type": "string"
+    },
+    "featureproduct_name": {
+      "type": "string"
+    },
+    "featureproduct_img": {
+      "type": "string"
+    },
+    "home_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::home-page.home-page",
+      "inversedBy": "featureproducts"
+    }
+  }
+}
