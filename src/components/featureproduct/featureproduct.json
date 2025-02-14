@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_featureproduct_featureproducts",
+  "info": {
+    "displayName": "Featureproduct"
+  },
+  "options": {},
+  "attributes": {
+    "featureproduct_id": {
+      "type": "integer"
+    },
+    "featureproduct_quote": {
+      "type": "text"
+    },
+    "featureproduct_name": {
+      "type": "string"
+    },
+    "featureproduct_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

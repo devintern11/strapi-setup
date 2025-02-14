@@ -1,0 +1,130 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_details",
+  "info": {
+    "singularName": "home-detail",
+    "pluralName": "home-details",
+    "displayName": "home-detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_background_video_src": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hero_heading": {
+      "type": "string"
+    },
+    "hero_sub_heading": {
+      "type": "text"
+    },
+    "ourleagacy_heading": {
+      "type": "string"
+    },
+    "ourleagacy_subheading": {
+      "type": "text"
+    },
+    "ourleagacy_videourl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ourleagacy_additionalText": {
+      "type": "text"
+    },
+    "horizontalcategory_heading": {
+      "type": "string"
+    },
+    "horizontalcategory_subheading": {
+      "type": "text"
+    },
+    "horizontalcategory_buttonText": {
+      "type": "string"
+    },
+    "horizontalcategory_buttonLink": {
+      "type": "string"
+    },
+    "Horizontalcategory_card": {
+      "displayName": "Horizontalcategory_card",
+      "type": "component",
+      "repeatable": true,
+      "component": "horizontalcategory-card.horizontalcategory-card"
+    },
+    "InsideParallax_heading": {
+      "type": "string"
+    },
+    "InsideParallax_backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "YtCardsScroll_title": {
+      "type": "string"
+    },
+    "YtCardsScroll_description": {
+      "type": "text"
+    },
+    "testmonial_heading": {
+      "type": "string"
+    },
+    "Testimonial": {
+      "displayName": "Testimonial",
+      "type": "component",
+      "repeatable": true,
+      "component": "testimonial.testimonial"
+    },
+    "Featureproduct": {
+      "displayName": "Featureproduct",
+      "type": "component",
+      "repeatable": true,
+      "component": "featureproduct.featureproduct"
+    },
+    "Infinite_scroll_logos": {
+      "displayName": "Infinite_scroll_logos",
+      "type": "component",
+      "repeatable": true,
+      "component": "infinite-scroll-logos.infinite-scroll-logos"
+    },
+    "grids": {
+      "displayName": "grids",
+      "type": "component",
+      "repeatable": true,
+      "component": "grids.grids"
+    },
+    "Statistic": {
+      "displayName": "Statistic",
+      "type": "component",
+      "repeatable": true,
+      "component": "statistic.statistic"
+    },
+    "Videocard": {
+      "displayName": "Video-card",
+      "type": "component",
+      "repeatable": true,
+      "component": "video-card.video-card"
+    }
+  }
+}

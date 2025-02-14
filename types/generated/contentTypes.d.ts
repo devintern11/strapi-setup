@@ -438,6 +438,72 @@ export interface ApiGridGrid extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiHomeDetailHomeDetail extends Struct.CollectionTypeSchema {
+  collectionName: 'home_details';
+  info: {
+    description: '';
+    displayName: 'home-detail';
+    pluralName: 'home-details';
+    singularName: 'home-detail';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Featureproduct: Schema.Attribute.Component<
+      'featureproduct.featureproduct',
+      true
+    >;
+    grids: Schema.Attribute.Component<'grids.grids', true>;
+    hero_background_video_src: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    hero_heading: Schema.Attribute.String;
+    hero_sub_heading: Schema.Attribute.Text;
+    horizontalcategory_buttonLink: Schema.Attribute.String;
+    horizontalcategory_buttonText: Schema.Attribute.String;
+    Horizontalcategory_card: Schema.Attribute.Component<
+      'horizontalcategory-card.horizontalcategory-card',
+      true
+    >;
+    horizontalcategory_heading: Schema.Attribute.String;
+    horizontalcategory_subheading: Schema.Attribute.Text;
+    Infinite_scroll_logos: Schema.Attribute.Component<
+      'infinite-scroll-logos.infinite-scroll-logos',
+      true
+    >;
+    InsideParallax_backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    InsideParallax_heading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-detail.home-detail'
+    > &
+      Schema.Attribute.Private;
+    ourleagacy_additionalText: Schema.Attribute.Text;
+    ourleagacy_heading: Schema.Attribute.String;
+    ourleagacy_subheading: Schema.Attribute.Text;
+    ourleagacy_videourl: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    Statistic: Schema.Attribute.Component<'statistic.statistic', true>;
+    Testimonial: Schema.Attribute.Component<'testimonial.testimonial', true>;
+    testmonial_heading: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Videocard: Schema.Attribute.Component<'video-card.video-card', true>;
+    YtCardsScroll_description: Schema.Attribute.Text;
+    YtCardsScroll_title: Schema.Attribute.String;
+  };
+}
+
 export interface ApiHomePageHomePage extends Struct.CollectionTypeSchema {
   collectionName: 'home_pages';
   info: {
@@ -601,7 +667,6 @@ export interface ApiProductImageProductImage
       'api::product-image.product-image'
     > &
       Schema.Attribute.Private;
-    products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
     src: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -635,13 +700,13 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
     product_detail_image: Schema.Attribute.String;
-    product_images: Schema.Attribute.Relation<
-      'manyToMany',
-      'api::product-image.product-image'
-    >;
     productadvantage: Schema.Attribute.Text;
     productdescrption: Schema.Attribute.String;
     productfeature: Schema.Attribute.Blocks;
+    Productimage: Schema.Attribute.Component<
+      'productimage.product-image',
+      true
+    >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1295,6 +1360,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::featureproduct.featureproduct': ApiFeatureproductFeatureproduct;
       'api::grid.grid': ApiGridGrid;
+      'api::home-detail.home-detail': ApiHomeDetailHomeDetail;
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::horizontalcategory-card.horizontalcategory-card': ApiHorizontalcategoryCardHorizontalcategoryCard;
       'api::infinite-scroll-logo.infinite-scroll-logo': ApiInfiniteScrollLogoInfiniteScrollLogo;

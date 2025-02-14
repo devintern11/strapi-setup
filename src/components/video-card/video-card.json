@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_video_card_video_cards",
+  "info": {
+    "displayName": "Video-card"
+  },
+  "options": {},
+  "attributes": {
+    "videourl": {
+      "type": "text"
+    },
+    "thumbnailUrl": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

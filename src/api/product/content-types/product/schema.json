@@ -21,12 +21,6 @@
     "image": {
       "type": "string"
     },
-    "product_images": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::product-image.product-image",
-      "mappedBy": "products"
-    },
     "productfeature": {
       "type": "blocks"
     },
@@ -44,6 +38,12 @@
     },
     "videosection_src": {
       "type": "string"
+    },
+    "Productimage": {
+      "displayName": "Product image",
+      "type": "component",
+      "repeatable": true,
+      "component": "productimage.product-image"
     }
   }
 }

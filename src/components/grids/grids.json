@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_grids_grids",
+  "info": {
+    "displayName": "grids"
+  },
+  "options": {},
+  "attributes": {
+    "src": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "alt": {
+      "type": "string"
+    },
+    "className": {
+      "type": "string",
+      "default": "md:col-span-1"
+    }
+  }
+}

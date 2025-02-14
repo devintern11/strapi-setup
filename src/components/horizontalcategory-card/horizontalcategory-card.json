@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_horizontalcategory_card_horizontalcategory_cards",
+  "info": {
+    "displayName": "Horizontalcategory_card"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "ids": {
+      "type": "integer"
+    }
+  }
+}

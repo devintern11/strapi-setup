@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_statistic_statistics",
+  "info": {
+    "displayName": "Statistic"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "target": {
+      "type": "integer"
+    }
+  }
+}
